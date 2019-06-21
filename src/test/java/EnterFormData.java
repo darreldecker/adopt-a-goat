@@ -68,4 +68,12 @@ public class EnterFormData {
         driver.quit();
     }
 
+    //TODO tests:
+    //  - Validate the lengths of text fields
+    //  - Validate text fields for cross site scripting attempts
+    //  - Validate how pages react on mobile browsers
+    //  - After form submission, validate that backend data was successfully saved maybe with an api call or db query
+    //  - Refactor startup and shutdown test suites to use better BeforeTest/AfterTest logic
+    //  - Refactor framework to us common logging and verification logic
+
 }

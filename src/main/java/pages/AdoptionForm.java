@@ -127,7 +127,9 @@ public class AdoptionForm extends WebDriverBase {
     }
 
     public List<String> getExpectedFeedbackMessages(AdoptionFormData formData){
-        // Generates a list of expected feedback messages based on input to the form
+        // Generates a list of expected feedback messages based on input to the form. Keeping
+        // the expected logic coupled with the page allows it to be easily modified for additional
+        // validation if needed.
         List<String> expectedMessages = new ArrayList<>();
 
         if(formData.getFirstName() == null){
